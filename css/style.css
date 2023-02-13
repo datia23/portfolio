@@ -683,6 +683,9 @@ body {
     }
 
     /* BUSINESS PAGE END */
+
+
+    /* ABOUT PAGE START */
     #about {
         margin: 0 auto;
         background-color: #fcf6fe;
@@ -874,6 +877,7 @@ body {
 
     /* skill bar chartt end */
 
+
     /* career */
     .career {
         margin: 0 auto;
@@ -941,6 +945,8 @@ body {
         left: -8px;
     }
 
+    /* ABOUT PAGE END */
+
 
 
     /* WORKS CONTENT PAGE */
@@ -979,7 +985,7 @@ body {
         z-index: 1;
         display: flex;
         transition-property: transform;
-        transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+        transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
         box-sizing: content-box;
     }
 
@@ -1002,7 +1008,7 @@ body {
 
 
     .swiper-pagination-bullet-active-prev-prev,
-    .swiper-pagination-bullet-active-main, 
+    .swiper-pagination-bullet-active-main,
     .swiper-pagination-bullet-active-next,
     .swiper-pagination-bullet-active-next-next {
         background-color: palevioletred;
@@ -1040,6 +1046,7 @@ body {
         max-width: 500px;
         width: 100%;
     }
+
     /* BANNER PAGE END */
 
 
