@@ -314,7 +314,7 @@ body {
     .business-box p {
         padding-bottom: 50px;
         line-height: 2.5;
-        letter-spacing: 1.8px;
+        letter-spacing: 0.8px;
         font-family: 'Arima Madurai', cursive;
         font-size: 14px;
         font-weight: 600;
@@ -604,12 +604,12 @@ body {
         padding: 0 0 100px;
     }
 
-    .business-ttl {
+    #business .business-ttl {
         text-align: center;
         padding-top: 60px;
     }
 
-    .business-profil {
+    #business .business-profil {
         margin: 0 auto;
         max-width: 740px;
         width: 100%;
