@@ -30,11 +30,11 @@ body {
         z-index: 10;
         box-shadow: 2px 2px 10px 0px #efe9fe6e;
         border-bottom: solid 5px #efe9fe;
+        background: white;
     }
 
     .navbar-wrapper {
         padding: 0 100px;
-        background: white;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -219,9 +219,9 @@ body {
         max-width: 940px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
-        gap: 60px;
+        gap: 25px;
     }
 
     .collage-inner {
@@ -231,6 +231,8 @@ body {
     .collage-inner img {
         width: 407px;
         height: 244px;
+        border: none;
+        border-radius: 5px;
     }
 
     .works-hov {
@@ -738,7 +740,7 @@ body {
         max-width: 740px;
         width: 100%;
         margin: 0 auto;
-        padding: 80px 0;
+        padding: 150px 0;
     }
 
     .skill-ttl {
@@ -746,10 +748,15 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        padding-bottom: 80px;
     }
 
     .skill-ttl h3 {
         border-left: 18px solid #f1ebfe;
+        padding-left: 10px;
+    }
+
+    .skill-ttl h3 span {
         padding-left: 10px;
     }
 
@@ -883,11 +890,15 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        padding-bottom: 70px;
+        padding-bottom: 60px;
     }
 
     .career-ttl h3 {
         border-left: 18px solid #f1ebfe;
+        padding-left: 10px;
+    }
+
+    .career-ttl h3 span {
         padding-left: 10px;
     }
 
@@ -930,6 +941,122 @@ body {
         left: -8px;
     }
 
+
+
+    /* WORKS CONTENT PAGE */
+
+    #works-content {
+        margin: 0 auto;
+        background-color: #fcf6fe;
+        padding-top: 120px;
+    }
+
+    #works-content .wrapper {
+        width: 100%;
+        max-width: 940px;
+        margin: 0 auto;
+        background-color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 0 0 100px;
+    }
+
+    #works-content .banner-ttl {
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .banner-swiper {
+        max-width: 740px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 280px;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+        box-sizing: content-box;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        border: none;
+        border-radius: 5px;
+    }
+
+
+    .swiper-pagination-bullet-active-prev-prev,
+    .swiper-pagination-bullet-active-main, 
+    .swiper-pagination-bullet-active-next,
+    .swiper-pagination-bullet-active-next-next {
+        background-color: palevioletred;
+    }
+
+    /* swiper end */
+
+    .text-wrap {
+        max-width: 740px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0 0;
+    }
+
+    .text-list {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text-list p {
+        text-align: justify;
+        font-weight: 700;
+        font-family: 'Arima Madurai', cursive;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .text-left {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .text-right {
+        max-width: 500px;
+        width: 100%;
+    }
+    /* BANNER PAGE END */
+
+
+
+    /* WEB DESAIN PAGE */
+    .website-list {
+        max-width: 740px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .website-pic img {
+        width: 600px;
+        height: auto;
+    }
 
 
 }
