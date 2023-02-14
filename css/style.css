@@ -737,7 +737,7 @@ body {
 
     #about .wrapper {
         width: 100%;
-        max-width: 940px;
+        max-width: 335px;
         margin: 0 auto;
         background-color: white;
         border: none;
@@ -752,18 +752,13 @@ body {
 
     .about-profil {
         margin: 0 auto;
-        max-width: 740px;
+        max-width: 335px;
         width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 50px;
-        gap: 80px;
+        padding-top: 25px;
     }
 
-
     #about .about-text {
-        max-width: 350px;
+        max-width: 275px;
         width: 100%;
         text-align: justify;
     }
@@ -777,13 +772,19 @@ body {
         padding: 0;
     }
 
+    .about-pic {
+        text-align: center;
+        padding-top: 50px;
+    }
+
     .about-pic img {
         border: none;
         border-radius: 10px;
+        max-width: 250px;
     }
 
     .skill {
-        max-width: 740px;
+        max-width: 275px;
         width: 100%;
         margin: 0 auto;
         padding: 150px 0;
@@ -809,7 +810,7 @@ body {
     /* skill bar chart */
     .skill-list {
         width: 100%;
-        max-width: 740px;
+        max-width: 275px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -818,7 +819,7 @@ body {
     .chart {
         flex: none;
         width: 100%;
-        max-width: 350px;
+        max-width: 275px;
     }
 
     .chart-ttl h3 {
@@ -927,7 +928,7 @@ body {
     }
 
     .career-wrapper {
-        max-width: 950px;
+        max-width: 335px;
         width: 100%;
         padding-bottom: 80px;
     }
@@ -950,7 +951,7 @@ body {
     }
 
     .career-list {
-        max-width: 740px;
+        max-width: 275px;
         margin: 0 auto;
         display: flex;
         text-align: justify;
@@ -960,20 +961,23 @@ body {
     .career-list p {
         font-weight: 600;
         font-family: 'Arima Madurai', cursive;
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 1.5px;
     }
 
     .date-left {
         padding: 50px 0 0 0;
+        max-width: 65px;
+        text-align: left;
     }
 
     .desc-right {
-        max-width: 520px;
+        max-width: 180px;
         width: 100%;
         border-left: 2px solid #dddddd;
-        padding: 50px 0 20px 50px;
+        padding: 50px 0 20px 30px;
         position: relative;
+        text-align: left;
     }
 
     .desc-right::before {
@@ -1002,7 +1006,7 @@ body {
 
     #works-content .wrapper {
         width: 100%;
-        max-width: 940px;
+        max-width: 335px;
         margin: 0 auto;
         background-color: white;
         border: none;
@@ -1016,7 +1020,7 @@ body {
     }
 
     .banner-swiper {
-        max-width: 740px;
+        max-width: 275px;
         width: 100%;
         margin: 0 auto;
     }
@@ -1523,20 +1527,8 @@ body {
 
 
     /* ABOUT PAGE START */
-    #about {
-        margin: 0 auto;
-        background-color: #fcf6fe;
-        padding-top: 120px;
-    }
-
     #about .wrapper {
-        width: 100%;
         max-width: 940px;
-        margin: 0 auto;
-        background-color: white;
-        border: none;
-        border-radius: 15px;
-        padding: 0 0 100px;
     }
 
     .about-ttl {
@@ -1545,9 +1537,7 @@ body {
     }
 
     .about-profil {
-        margin: 0 auto;
         max-width: 740px;
-        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -1555,163 +1545,31 @@ body {
         gap: 80px;
     }
 
-
     #about .about-text {
         max-width: 350px;
-        width: 100%;
-        text-align: justify;
     }
 
-    #about .about-text p {
-        font-weight: 500;
-        font-family: 'Arima Madurai', cursive;
-        letter-spacing: 1.5px;
-        font-size: 12px;
-        line-height: 1.8;
+    .about-pic {
         padding: 0;
     }
 
     .about-pic img {
-        border: none;
-        border-radius: 10px;
+        max-width: 350px;
     }
 
     .skill {
         max-width: 740px;
         width: 100%;
-        margin: 0 auto;
-        padding: 150px 0;
-    }
-
-    .skill-ttl {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding-bottom: 80px;
-    }
-
-    .skill-ttl h3 {
-        border-left: 18px solid #f1ebfe;
-        padding-left: 10px;
-    }
-
-    .skill-ttl h3 span {
-        padding-left: 10px;
     }
 
     /* skill bar chart */
     .skill-list {
-        width: 100%;
         max-width: 740px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
     }
 
     .chart {
-        flex: none;
-        width: 100%;
         max-width: 350px;
     }
-
-    .chart-ttl h3 {
-        font-weight: 900;
-        font-family: 'Arima Madurai', cursive;
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
-    .chart-ttl h3 span {
-        float: right;
-        font-weight: 500;
-    }
-
-    .bar-chart {
-        background: #eae2fd;
-        height: 10px;
-        margin-bottom: 50px;
-    }
-
-    .bar-chart .bar-chart--inner {
-        background: #333;
-        height: 100%;
-        display: block;
-        margin-bottom: 0.3rem;
-        position: relative;
-        will-change: width;
-    }
-
-    .bar-chart .bar-chart--inner::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        content: " ";
-        width: 1rem;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.1);
-    }
-
-    .bar-chart .bar-chart--inner {
-        background: #7659bb;
-    }
-
-    .chart:nth-child(1) {
-        background-image: url('../img/icon-html1.png');
-        background-repeat: no-repeat;
-        background-size: 35px;
-        padding-left: 50px;
-    }
-
-    .chart:nth-child(3) {
-        background-image: url('../img/icon-css.png');
-        background-repeat: no-repeat;
-        background-size: 35px;
-        padding-left: 50px;
-    }
-
-    .chart:nth-child(5) {
-        background-image: url('../img/icon-js.png');
-        background-repeat: no-repeat;
-        background-size: 35px;
-        padding-left: 50px;
-    }
-
-    .chart:nth-child(7) {
-        background-image: url('../img/icon-ps.png');
-        background-repeat: no-repeat;
-        background-size: 35px;
-        padding-left: 50px;
-    }
-
-    .chart:nth-child(2) {
-        background-image: url('../img/icon-word.png');
-        background-repeat: no-repeat;
-        background-size: 35px;
-        padding-left: 50px;
-    }
-
-    .chart:nth-child(4) {
-        background-image: url('../img/icon-ppt.png');
-        background-repeat: no-repeat;
-        background-size: 35px;
-        padding-left: 50px;
-    }
-
-    .chart:nth-child(6) {
-        background-image: url('../img/icon-excel.png');
-        background-repeat: no-repeat;
-        background-size: 35px;
-        padding-left: 50px;
-    }
-
-    .chart:nth-child(8) {
-        background-image: url('../img/icon-jp.png');
-        background-repeat: no-repeat;
-        background-size: 35px;
-        padding-left: 50px;
-    }
-
     /* skill bar chartt end */
 
 
@@ -1722,77 +1580,32 @@ body {
 
     .career-wrapper {
         max-width: 950px;
-        width: 100%;
-        padding-bottom: 80px;
-    }
-
-    .career-ttl {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding-bottom: 60px;
-    }
-
-    .career-ttl h3 {
-        border-left: 18px solid #f1ebfe;
-        padding-left: 10px;
-    }
-
-    .career-ttl h3 span {
-        padding-left: 10px;
     }
 
     .career-list {
         max-width: 740px;
-        margin: 0 auto;
-        display: flex;
-        text-align: justify;
-        justify-content: space-between;
     }
 
     .career-list p {
-        font-weight: 600;
-        font-family: 'Arima Madurai', cursive;
         font-size: 14px;
-        letter-spacing: 1.5px;
     }
 
     .date-left {
-        padding: 50px 0 0 0;
+        max-width: 200px;
     }
 
     .desc-right {
         max-width: 520px;
-        width: 100%;
-        border-left: 2px solid #dddddd;
         padding: 50px 0 20px 50px;
-        position: relative;
+        text-align: justify;
     }
 
-    .desc-right::before {
-        content: " ";
-        display: block;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background: #efe9fe;
-        position: absolute;
-        top: 55px;
-        left: -8px;
-    }
 
     /* ABOUT PAGE END */
 
 
 
     /* WORKS CONTENT PAGE */
-
-    #works-content {
-        margin: 0 auto;
-        background-color: #fcf6fe;
-        padding-top: 120px;
-    }
 
     #works-content .wrapper {
         width: 100%;
