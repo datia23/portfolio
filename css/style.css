@@ -49,6 +49,80 @@ body {
         margin: 0 auto;
     }
 
+    #sidebar {
+        position: fixed;
+        max-width: 375px;
+        width: 100%;
+        background: #f4ecff;
+        z-index: 0;
+        top: 65px;
+        right: -375px;
+        transition: 0.6s;
+        height: calc(101vh - 90px);
+        overflow-y: scroll;
+    }
+
+    .sidebar-menu {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    #sidebar.active {
+        right: 0;
+    }
+
+    #sidebar .toggle-btn {
+        position: fixed;
+        top: 8px;
+        right: 35px;
+    }
+
+    ul.sidebar-menu li {
+        padding-bottom: 10px;
+    }
+
+    #sidebar a:hover {
+        color: #7659bb;
+        padding-bottom: 2px solid #333;
+    }
+
+    #sidebar li {
+        list-style: none;
+        line-height: 5;
+    }
+
+    #sidebar a {
+        text-decoration: none;
+        font-family: 'Arima Madurai', cursive;
+        font-size: 14px;
+        font-weight: 800;
+        color: #333;
+
+    }
+
+    .toggle-btn {
+        padding-top: 8px;
+        width: 40px;
+        height: 40px;
+        background: #efe9fe;
+        border-radius: 50%;
+    }
+
+    .toggle-btn span {
+        width: 25px;
+        height: 3px;
+        background: white;
+        display: block;
+        margin: 4px auto 0;
+    }
+
+    .toggle-btn:hover {
+        cursor: pointer;
+    }
+
+
     .home {
         width: 100%;
         display: flex;
@@ -253,15 +327,18 @@ body {
 
     /* business */
     .business {
+        max-width: 335px;
+        width: 100%;
         margin: 0 auto;
     }
 
     .business-content {
         padding: 75px 5px;
+        display: block;
     }
 
     .business-box {
-        max-width: 335px;
+        width: 335px;
         height: 450px;
         background-color: #efe9fe;
         padding: 50px;
@@ -392,7 +469,7 @@ body {
     ul.contact-medsoc {
         display: block;
         line-height: 4;
-        padding-bottom:0;
+        padding-bottom: 0;
     }
 
     ul.contact-medsoc li {
@@ -450,7 +527,7 @@ body {
     }
 
     .works-list-wrap {
-        max-width: 740px;
+        max-width: 335px;
         width: 100%;
         margin: 0 auto;
     }
@@ -458,7 +535,7 @@ body {
     .list-banner h3 {
         display: flex;
         align-items: center;
-        gap: 45px;
+        gap: 10px;
         border-left: 18px solid #f1ebfe;
         padding-left: 10px;
         margin-top: 150px;
@@ -469,12 +546,12 @@ body {
     }
 
     .list-img img {
-        max-width: 740px;
+        max-width: 335px;
         width: 100%;
     }
 
     .back-btn {
-        max-width: 740px;
+        max-width: 335px;
         width: 100%;
         margin: 0 auto;
         padding: 120px 0;
@@ -486,7 +563,7 @@ body {
         text-decoration: none;
         color: #333;
         font-family: 'Arima Madurai', cursive;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 900;
         letter-spacing: 2px;
     }
@@ -523,8 +600,8 @@ body {
 
     .list-img .works-hov {
         position: absolute;
-        top: 20px;
-        left: 30px;
+        top: 10px;
+        left: 14px;
         width: 92%;
         height: 88%;
         transition: all .2s;
@@ -558,7 +635,7 @@ body {
 
     #business .wrapper {
         width: 100%;
-        max-width: 940px;
+        max-width: 335px;
         margin: 0 auto;
         background-color: white;
         border: none;
@@ -573,15 +650,15 @@ body {
 
     #business .business-profil {
         margin: 0 auto;
-        max-width: 740px;
+        max-width: 285px;
         width: 100%;
-        display: flex;
-        justify-content: space-around;
+        display: block;
         padding-top: 50px;
     }
 
     .profil-text {
-        max-width: 350px;
+        max-width: 275px;
+        margin: 0 auto;
         width: 100%;
         text-align: justify;
     }
@@ -589,8 +666,13 @@ body {
     .profil-text p {
         font-weight: 500;
         font-family: 'Arima Madurai', cursive;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-size: 14px;
+    }
+
+    .profil-pic {
+        padding-top: 30px;
+        text-align: center;
     }
 
     .profil-pic p {
@@ -604,21 +686,22 @@ body {
 
     .business-list {
         margin: 0 auto;
-        max-width: 740px;
+        max-width: 275px;
         width: 100%;
     }
 
     .list-bucket {
-        padding: 120px 0 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: nowrap;
+        padding: 100px 0 0;
+        text-align: center;
+    }
+
+    .list-img {
+        padding: 15px 0;
     }
 
     .list-bucket .list-img img {
-        width: 320px;
-        height: 400px;
+        width: 250px;
+        height: 310px;
         border: none;
         border-radius: 10px;
     }
@@ -633,13 +716,13 @@ body {
         font-family: 'Arima Madurai', cursive;
         line-height: 2;
         letter-spacing: 2px;
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
     }
 
     .list-text p span {
         font-weight: 1000;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /* BUSINESS PAGE END */
@@ -1176,6 +1259,9 @@ body {
 
 
     /* business */
+    .business {
+        max-width: 940px;
+    }
 
     .business-content {
         padding: 120px 5px;
@@ -1185,8 +1271,8 @@ body {
     }
 
     .business-box {
-        max-width: 547px;
-        max-height: 416px;
+        width: 547px;
+        height: 416px;
         padding: 55px;
     }
 
@@ -1287,44 +1373,22 @@ body {
 
     .works-list-wrap {
         max-width: 740px;
-        width: 100%;
-        margin: 0 auto;
     }
 
     .list-banner h3 {
-        display: flex;
-        align-items: center;
         gap: 45px;
-        border-left: 18px solid #f1ebfe;
-        padding-left: 10px;
-        margin-top: 150px;
-    }
-
-    .list-img {
-        position: relative;
     }
 
     .list-img img {
         max-width: 740px;
-        width: 100%;
     }
 
     .back-btn {
         max-width: 740px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 120px 0;
-        display: flex;
-        justify-content: space-between;
     }
 
     .back-btn a {
-        text-decoration: none;
-        color: #333;
-        font-family: 'Arima Madurai', cursive;
         font-size: 18px;
-        font-weight: 900;
-        letter-spacing: 2px;
     }
 
     .back-btn .back-home a:hover {
@@ -1386,20 +1450,9 @@ body {
 
 
     /* BUSINESS PAGE START */
-    #business {
-        margin: 0 auto;
-        background-color: #fcf6fe;
-        padding-top: 120px;
-    }
 
     #business .wrapper {
-        width: 100%;
         max-width: 940px;
-        margin: 0 auto;
-        background-color: white;
-        border: none;
-        border-radius: 15px;
-        padding: 0 0 100px;
     }
 
     #business .business-ttl {
@@ -1408,18 +1461,13 @@ body {
     }
 
     #business .business-profil {
-        margin: 0 auto;
         max-width: 740px;
-        width: 100%;
         display: flex;
         justify-content: space-around;
-        padding-top: 50px;
     }
 
     .profil-text {
         max-width: 350px;
-        width: 100%;
-        text-align: justify;
     }
 
     .profil-text p {
@@ -1427,6 +1475,10 @@ body {
         font-family: 'Arima Madurai', cursive;
         letter-spacing: 2px;
         font-size: 14px;
+    }
+
+    .profil-pic {
+        padding-top: 0;
     }
 
     .profil-pic p {
@@ -1439,9 +1491,7 @@ body {
     }
 
     .business-list {
-        margin: 0 auto;
         max-width: 740px;
-        width: 100%;
     }
 
     .list-bucket {
@@ -1452,29 +1502,20 @@ body {
         flex-wrap: nowrap;
     }
 
+    .list-img {
+        padding: 0;
+    }
+
     .list-bucket .list-img img {
         width: 320px;
         height: 400px;
-        border: none;
-        border-radius: 10px;
-    }
-
-    .list-text {
-        max-width: 350px;
-        width: 100%;
     }
 
     .list-text p {
-        font-weight: 500;
-        font-family: 'Arima Madurai', cursive;
-        line-height: 2;
-        letter-spacing: 2px;
         font-size: 14px;
-        text-align: center;
     }
 
     .list-text p span {
-        font-weight: 1000;
         font-size: 16px;
     }
 

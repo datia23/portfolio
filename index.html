@@ -58,6 +58,39 @@
                     </li>
                 </ul>
             </div>
+            <!-- navbar pc -->
+
+            <!-- sidebar sp -->
+            <div id="sidebar" class="sp">
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="works.html">
+                            Works
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html">
+                            Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="toggle-btn" onclick="show()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- sidebar sp -->
         </div>
     </header>
     <!-- header end -->
@@ -225,7 +258,8 @@
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1400">
                     <p>Saya merupakan seorang mahasiswi sastra jepang di salah
-                        satu universitas di Jakarta Selatan. Kesibukan saya saat ini adalah saya sedang mengikuti program internship di PT 
+                        satu universitas di Jakarta Selatan. Kesibukan saya saat ini adalah saya sedang mengikuti
+                        program internship di PT
                         Ozora Global Indonesia yang bergerak di bidang web desain.</p>
 
                     <div class="view-more-about">
@@ -244,7 +278,7 @@
     <div id="contact">
         <div class="wrapper">
             <div class="contact-content">
-                <div class="wrap-ttl" >
+                <div class="wrap-ttl">
                     <h3>
                         Contact
                         <br>
@@ -289,6 +323,13 @@
 
 <script>
     AOS.init(); 
+</script>
+
+<!-- sidebar navbar sp -->
+<script>
+    function show() {
+        document.getElementById('sidebar').classList.toggle('active')
+    }
 </script>
 
 
