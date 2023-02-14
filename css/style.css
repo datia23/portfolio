@@ -33,7 +33,7 @@ body {
         margin: 0 auto;
         position: fixed;
         top: 0;
-        max-width: 375px;
+
         width: 100%;
         z-index: 10;
         box-shadow: 2px 2px 10px 0px #efe9fe6e;
