@@ -59,12 +59,58 @@
                     </li>
                 </ul>
             </div>
+            <!-- navbar pc -->
+
+            <!-- sidebar sp -->
+            <div id="sidebar" class="sp">
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="works.html">
+                            Works
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html">
+                            Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-medsoc">
+                    <li>
+                        <a href="#">
+                            <img src="img/logo-twitter.png">
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="https://www.instagram.com/datiaaachan/" target="_blank">
+                            <img src="img/logo-ig.png">
+                        </a>
+                    </li>
+                </ul>
+                <div class="toggle-btn" onclick="show()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- sidebar sp -->
         </div>
     </header>
     <!-- header end -->
 
     <!-- side nav start -->
-    <div class="medsoc-nav">
+    <div class="medsoc-nav pc">
         <ul>
             <li>
                 <a href="#">
@@ -73,7 +119,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="https://www.instagram.com/datiaaachan/" target="_blank">
                     <img src="img/logo-ig.png">
                 </a>
             </li>
@@ -236,6 +282,13 @@
 
 <script>
     AOS.init(); 
+</script>
+
+<!-- sidebar navbar sp -->
+<script>
+    function show() {
+        document.getElementById('sidebar').classList.toggle('active')
+    }
 </script>
 
 

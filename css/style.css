@@ -19,7 +19,7 @@ body {
     box-sizing: inherit;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
     .sp {
         display: block;
     }
@@ -33,7 +33,6 @@ body {
         margin: 0 auto;
         position: fixed;
         top: 0;
-
         width: 100%;
         z-index: 10;
         box-shadow: 2px 2px 10px 0px #efe9fe6e;
@@ -42,7 +41,7 @@ body {
     }
 
     .navbar-wrapper {
-        padding: 0 50px;
+        padding: 0 35px;
         display: block;
         max-width: 375px;
         width: 100%;
@@ -52,19 +51,19 @@ body {
 
     #sidebar {
         position: fixed;
-        max-width: 375px;
+        max-width: 300px;
         width: 100%;
         background: #f4ecff;
         z-index: 0;
-        top: 65px;
-        right: -375px;
+        top: 60px;
+        right: -300px;
         transition: 0.6s;
-        height: calc(101vh - 90px);
+        height: 100%;
         overflow-y: scroll;
     }
 
     .sidebar-menu {
-        margin: 0 auto;
+        margin: 100px auto 70px;
         width: 100%;
         max-width: 200px;
         text-align: center;
@@ -84,23 +83,46 @@ body {
         padding-bottom: 10px;
     }
 
-    #sidebar a:hover {
-        color: #7659bb;
-        padding-bottom: 2px solid #333;
-    }
-
     #sidebar li {
         list-style: none;
         line-height: 5;
     }
 
-    #sidebar a {
+    #sidebar ul.sidebar-menu a {
         text-decoration: none;
         font-family: 'Arima Madurai', cursive;
         font-size: 14px;
         font-weight: 800;
         color: #333;
+        letter-spacing: 2px;
+        border-bottom: solid 1px #73408a;
+    }
 
+    #sidebar ul.sidebar-menu a:hover {
+        color: #7659bb;
+        padding-bottom: 5px;
+    }
+
+    ul.sidebar-medsoc {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    ul.sidebar-medsoc li {
+        list-style: none;
+    }
+
+    ul.sidebar-medsoc li:nth-child(1) img {
+        width: 70px;
+        height: 70px;
+    }
+
+    ul.sidebar-medsoc li:nth-child(2) img {
+        width: 50px;
+        height: 50px;
     }
 
     .toggle-btn {
@@ -161,15 +183,13 @@ body {
 
     .wrapper {
         width: 100%;
-        max-width: 335px;
+        max-width: 305px;
         margin: 0 auto;
     }
 
     .top-main-content {
-        padding: 120px 5px;
+        padding: 100px 5px;
         width: 100%;
-        max-width: 335px;
-
     }
 
     .top-main-content h1 {
@@ -195,9 +215,9 @@ body {
     }
 
     .top-img {
-        padding-top: 80px;
+        padding-top: 50px;
         position: relative;
-        padding-left: 10px;
+        padding-left: 0;
     }
 
     .top-img img {
@@ -207,8 +227,8 @@ body {
 
     .top-img img:nth-child(2) {
         position: absolute;
-        right: 4px;
-        top: 40px;
+        right: 0;
+        top: 25px;
         z-index: -1;
     }
 
@@ -328,18 +348,18 @@ body {
 
     /* business */
     .business {
-        max-width: 335px;
+        max-width: 305px;
         width: 100%;
         margin: 0 auto;
     }
 
     .business-content {
-        padding: 75px 5px;
+        padding: 70px 0;
         display: block;
     }
 
     .business-box {
-        width: 335px;
+        width: 305px;
         height: 450px;
         background-color: #efe9fe;
         padding: 50px;
@@ -1122,7 +1142,8 @@ body {
 
 }
 
-@media only screen and (min-width: 1440px) {
+
+@media only screen and (min-width: 1024px) {
     .sp {
         display: none;
     }
@@ -1130,11 +1151,9 @@ body {
     .pc {
         display: block;
     }
-
-
-    /* HOME PAGE */
+    
     #header {
-        max-width: 2560px;
+        max-width: 1440px;
     }
 
     .navbar-wrapper {
@@ -1170,20 +1189,25 @@ body {
         color: #444248;
     }
 
-
     /* side-nav */
     .medsoc-nav {
         position: fixed;
         right: 30px;
         top: 50%;
+        text-align: center;
     }
 
     .medsoc-nav li {
         list-style: none;
-        line-height: 2.2;
+        line-height: 2.5;
     }
 
-    .medsoc-nav a img {
+    .medsoc-nav li:nth-child(1) img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .medsoc-nav li:nth-child(2) img {
         width: 25px;
         height: 25px;
     }
@@ -1192,6 +1216,10 @@ body {
         transform: scale(1.1);
     }
 
+    
+
+
+    
     /* content */
 
     /* top main */
@@ -1206,7 +1234,6 @@ body {
     .top-main-content {
         padding: 150px 5px;
         width: 100%;
-        max-width: 940px;
         display: flex;
         align-items: center;
     }
@@ -1571,6 +1598,7 @@ body {
     .chart {
         max-width: 350px;
     }
+
     /* skill bar chartt end */
 
 
@@ -1634,7 +1662,8 @@ body {
     /* swiper end */
 
     .text-wrap {
-        max-width: 740px;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .text-list {
@@ -1672,35 +1701,60 @@ body {
         width: 600px;
     }
 
+    .text-right button {
+        padding: 8px 20px;
+        float: left;
+        background-color: #d6c6fa;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: 'Arima Madurai', cursive;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .text-right button:hover {
+        cursor: pointer;
+        color: #000000;
+        letter-spacing: 3px;
+        transition: all 0.2s;
+    }
+
     /* WEB DESAIN PAGE END */
 
     /* GREETCARD PAGE START */
 
 
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .sp {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    /* HOME PAGE */
+    #header {
+        max-width: 2560px;
+    }
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 2560px) {
+    .sp {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
     #header {
         max-width: 2560px;
     }
